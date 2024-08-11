@@ -1,0 +1,279 @@
+*{
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 0;
+padding: 0;
+}
+button, a{
+cursor: pointer;
+transition: 0.3s;
+}
+body{
+text-align: center;
+background: ghostwhite;
+}
+header{
+padding: 3%;
+box-shadow: 0 0.5px 5px brown;
+margin: 0 auto;
+width: 100%;
+display: flex;
+gap: 10%;
+}
+header p{
+width: 25%;
+color: blue;
+text-decoration: 1.5px underline blue;
+cursor: pointer;
+}
+main{
+margin-top: 6%;
+}
+.home{
+margin: 0 auto;
+}
+.home img{
+width: 50%;
+border: 2px solid brown;
+border-radius: 10rem;
+box-shadow: 0 0 8px brown;
+animation: homeImg 3s infinite ease-in-out;
+}
+@keyframes homeImg{
+20%{
+box-shadow: 0 0 8px black;
+}
+40%{
+box-shadow: 0 0 8px brown;
+}
+60%{
+box-shadow: 0 0 8px black;
+}
+80%{
+box-shadow: 0 0 8px brown;
+}
+100%{
+box-shadow: 0 0 8px black;
+}
+}
+.home img:hover{
+transform: rotateY(360deg);
+transition: 5s;
+}
+.home img:active{
+transform: rotateY(360deg);
+transition: 5s;
+}
+.homeText{
+margin: 0 auto;
+margin-top: 10%;
+width: 60%;
+text-align: start;
+padding-bottom: 5%;
+border-bottom: 2px solid brown;
+}
+.homeText h2{
+color: brown;
+text-shadow: 1px 1px black;
+}
+.homeText p{
+margin-top: 8%;
+font-size: 1.2rem
+}
+.socialIcons{
+z-index: 99999;
+position: fixed;
+left: 88%;
+bottom: 4%;
+}
+.toogleSocial{
+width: 35%;
+border-radius: 12rem;
+box-shadow: 0 0 6px brown;
+}
+.socialBtn{
+gap: 25%;
+display: flex;
+}
+.socialBtn i{
+color: black;
+text-shadow: 1px 1.5px blue;
+font-size: 1.8rem;
+}
+.socialD{
+width: 110%;
+height: 100%;
+margin: 0 auto;
+border-radius: 5px;
+box-shadow: 0 0 4px black;
+}
+.socialD header{
+box-shadow: 0;
+}
+.socialD div{
+margin-top: 5%;
+}
+.socialD iframe{
+height: 83vh;
+width: 95%;
+}
+.socialD button{
+width: 90%;
+height: 3vh;
+background: transparent;
+border-radius: 5px;
+box-shadow: 0 0 4px black;
+font-weight: bolder;
+letter-spacing: 2px;
+margin-top: 3%;
+}
+.about{
+padding: 0 0 5% 0;
+}
+.about section{
+margin: 0 auto;
+margin-top: 4%;
+}
+.about section div{
+width: 80%;
+padding: 2% 0;
+margin: 0 auto;
+border-radius: 3px;
+box-shadow: 0 0 4px black;
+background: brown;
+}
+.about section div h3{
+margin: 0 auto;
+color: white;
+border-radius: 4px;
+letter-spacing: 1.5px;
+}
+.about section div h3:first-letter{
+font-size: x-large;
+text-transform: uppercase;
+font-family: Georgia, 'Times New Roman', Times;
+}
+.about section article{
+width: 80%;
+box-shadow: 0 0 5px brown;
+margin: 0 auto;
+padding: 4% 2%;
+border: 2px solid brown;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+text-align: start;
+}
+.about section article h3{
+margin-bottom: 3%;
+color: brown;
+}
+.about section article b{
+color: brown;
+}
+.about .personal article > :first-child{
+margin-bottom: 4%;
+}
+.about .career p{
+margin-bottom: 2%;
+}
+.portfolio{
+padding: 0 0 5% 0;
+}
+.portfolio section{
+margin: 0 auto;
+margin-top: 4%;
+}
+.portfolio section div{
+width: 80%;
+padding: 2% 0;
+margin: 0 auto;
+border-radius: 3px;
+box-shadow: 0 0 4px black;
+background: brown;
+}
+.portfolio section div h3{
+margin: 0 auto;
+color: white;
+border-radius: 4px;
+letter-spacing: 1.5px;
+}
+.portfolio section div h3:first-letter{
+font-size: x-large;
+text-transform: uppercase;
+font-family: Georgia, 'Times New Roman', Times;
+}
+.portfolio section article{
+width: 80%;
+box-shadow: 0 0 5px brown;
+margin: 0 auto;
+padding: 6% 2% 2% 2%;
+border: 2px solid brown;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+text-align: start;
+}
+.portfolio section article video{
+width: 100%;
+}
+.portfolio section article h3{
+margin-bottom: 3%;
+color: brown;
+}
+.portfolio section article b{
+color: brown;
+}
+.portfolio .personal article > :first-child{
+margin-bottom: 4%;
+}
+.portfolio .career p{
+margin-bottom: 2%;
+}
+.portfolio video{
+border-radius: 6px;
+}
+.portfolio .goTo{
+width: 100%;
+height: 3vh;
+text-align: center;
+border-radius: 5px;
+background: transparent;
+box-shadow: 0 0 3px brown;
+margin-top: 3%;
+border: 1px solid brown;
+}
+.portfolio section article ul{
+padding: 0 2%;
+}
+.portfolio section article li{
+margin-bottom: 5%;
+}
+.portfolio section article img{
+border-radius: 4px;
+box-shadow: 0 0 4px;
+margin-top: 2%; 
+}
+.rslides{
+display: flex;
+gap: 4%;
+overflow: auto;
+overflow-x: auto;
+overflow-y: auto;
+scroll-snap-type: y;
+scroll-snap-type-y: auto;
+scroll-snap-type-x: auto;
+position: relative;
+}
+.rslides img{
+width: 350px;
+height: 50vh;
+margin-right: 3%;
+}
+.portfolio iframe{
+width: 100%;
+}
+@media screen and (min-width: 768px){
+.home img{
+border-radius: 20rem;
+width: 45%;
+}
+}
